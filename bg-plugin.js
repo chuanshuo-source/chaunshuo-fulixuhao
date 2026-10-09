@@ -2,7 +2,6 @@
  * BG-Plugin v1.0 - 外掛式背景切換器
  * 用法: <script src="bg-plugin.js"></script>
  * 會自動掛到 #heroBgImg 和 #heroWrap
- * 支援 手動上傳 / 網址 / 拖曳 / localStorage
  */
 (function(){
   const LS_KEY = 'aov_bg_plugin_v3';
