@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>十年相伴 傳說不減</title>
+<style>
+  /* ===== 在這裡換設定 ===== */
+  :root{
+    --bg: url('https://i.imgur.com/8Km9tLL.jpg'); /* 換底圖：改這裡 */
+    --line: "https://line.me/R/ti/p/@yourid"; /* 換LINE：JS裡改 */
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    min-height:100vh;
+    background: var(--bg) center/cover no-repeat fixed;
+    font-family: "Microsoft JhengHei", sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:#fff;
+  }
+  .top{margin-top:28px;text-align:center;text-shadow:0 2px 10px #000}
+  .top small{letter-spacing:3px;color:#ffe9a3}
+  h1{font-size:42px;color:#ffd55a;margin:10px 0;text-shadow:0 0 20px #ffb700}
+  .ribbon{
+    background:linear-gradient(90deg,#1e3a8a,#2563eb);
+    padding:6px 22px;border-radius:20px;font-size:14px;margin:10px 0;
+    border:1px solid #60a5fa;
+  }
+  .btns{
+    display:flex;gap:12px;margin:26px 0;flex-wrap:wrap;justify-content:center
+  }
+  .btn{
+    padding:10px 22px;border-radius:999px;
+    border:1.5px solid #facc15;background:#0f1e4a;color:#fde68a;
+    font-size:14px;cursor:pointer;transition:.2s;
+  }
+  .btn:hover{background:#1e3a8a;box-shadow:0 0 15px #facc15;transform:translateY(-2px)}
+  .date{
+    margin-top:auto;margin-bottom:20px;
+    background:#0f1e4a99;padding:8px 20px;border-radius:99px;
+    border:1px solid #facc15;font-size:13px;
+  }
+</style>
+</head>
+<body>
+  <div class="top">
+    <small>傳說對決 | 10週年 A Decade of Valor</small>
+    <h1>十年相伴 傳說不減</h1>
+    <div class="ribbon">限時領取造型序號，三款造型任選一款 · 三選一</div>
+  </div>
+
+  <div class="btns">
+    <button class="btn" onclick="go()">拉茲</button>
+    <button class="btn" onclick="go()">納克羅斯</button>
+    <button class="btn" onclick="go()">莉莉安</button>
+  </div>
+
+  <div class="date">活動時間 10.09 週五 >>> 10.12 週一</div>
+
+<script>
+// ===== 在這裡換 =====
+const BG_IMAGE = "./bg.jpg"; // 換底圖：改這個路徑或網址
+const LINE_LINK = "https://line.me/R/ti/p/@yourid"; // 換LINE連結：改這裡
+
+// 套用底圖
+document.documentElement.style.setProperty('--bg', `url('${BG_IMAGE}')`);
+function go(){ window.open(LINE_LINK, "_blank"); }
+</script>
+</body>
+</html>
